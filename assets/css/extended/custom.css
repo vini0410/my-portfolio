@@ -1,0 +1,49 @@
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right #theme-toggle {
+    margin-left: var(--gap);
+}
+
+.footer-contact {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    margin-bottom: 20px; /* Added margin to separate from "Powered by" */
+}
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.main {
+    min-height: auto;
+}
+
+.entry-tags {
+    margin: 8px 0;
+}
+
+.tags-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-item {
+    display: inline-block;
+    background: var(--code-bg);
+    padding: 4px 8px;
+    border-radius: var(--radius);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.entry-header h2.entry-hint-parent {
+    text-align: center;
+}

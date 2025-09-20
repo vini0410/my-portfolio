@@ -1,0 +1,21 @@
+baseURL = 'https://example.org/'
+languageCode = 'en'
+title = 'Vinicius Helegda - Software Developer'
+theme = 'PaperMod'
+
+[params]
+  mainSections = ["projects"]
+  disableSpecial1stPost = true
+  defaultTheme = "dark"
+
+[[menu.main]]
+  identifier = "experiences"
+  name = "Professional Experiences"
+  url = "/experiences/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "about"
+  name = "About Me"
+  url = "/about/"
+  weight = 30

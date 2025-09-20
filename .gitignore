@@ -1,0 +1,12 @@
+# Hugo build artifacts
+public/
+.hugo_build.lock
+
+# Go build artifacts (if any)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.prof
