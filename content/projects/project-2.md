@@ -2,7 +2,7 @@
 title: "Project 2"
 date: 2025-09-20T15:01:00Z
 draft: false
-weight: 2
+weight: 10
 tags: ["JavaScript", "React", "Node.js"]
 cover:
     image: "https://via.placeholder.com/1280x720.png?text=Project+2+Screenshot"

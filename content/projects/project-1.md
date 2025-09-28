@@ -2,7 +2,7 @@
 title: "Project 1"
 date: 2025-09-20T15:00:00Z
 draft: false
-weight: 1
+weight: 9
 tags: ["Go", "Java", "Python"]
 cover:
     image: "https://via.placeholder.com/1280x720.png?text=Project+1+Screenshot"
