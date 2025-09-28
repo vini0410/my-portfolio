@@ -1,7 +1,11 @@
 baseURL = 'https://example.org/'
 languageCode = 'en'
 title = 'Vinicius Helegda - Software Developer'
-theme = 'PaperMod'
+# theme = 'PaperMod'
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
 
 [params]
   mainSections = ["projects"]
