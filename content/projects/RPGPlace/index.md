@@ -5,7 +5,7 @@ draft: false
 weight: 1
 tags: ["Java", "Spring Boot", "Angular", "TypeScript", "PostgreSQL", "WebSockets", "Full-stack", "Game Development"]
 cover:
-    image: "https://via.placeholder.com/1280x720.png?text=RPGPlace"
+    image: "rpg-place-welcome.png"
     alt: "Screenshot of RPGPlace application"
     caption: "Full-stack platform for real-time RPG session management."
 ---

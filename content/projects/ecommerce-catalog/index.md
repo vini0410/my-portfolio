@@ -5,7 +5,7 @@ draft: false
 weight: 2
 tags: ["React", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "Tailwind CSS", "Full-stack"]
 cover:
-    image: "https://via.placeholder.com/1280x720.png?text=Ecommerce+Catalog"
+    image: "ecommerce-stacks.png"
     alt: "Screenshot of Ecommerce Catalog application"
     caption: "A modern e-commerce catalog with admin features."
 ---
