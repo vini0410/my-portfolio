@@ -3,9 +3,9 @@ title: "RPGConnect"
 date: 2025-09-21T13:05:00Z
 draft: false
 weight: 5
-tags: ["React", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "WebSockets", "Real-time", "Game Development"]
+tags: ["React", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "WebSockets", "Real-time", "Tailwind CSS", "Full-stack"]
 cover:
-    image: "https://via.placeholder.com/1280x720.png?text=RPGConnect"
+    image: "rpg-connect-login.png"
     alt: "Screenshot of RPGConnect application"
     caption: "Real-time platform for tabletop RPG sessions."
 ---

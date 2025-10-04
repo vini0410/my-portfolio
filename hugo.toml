@@ -19,7 +19,7 @@ title = 'Vinicius Helegda - Software Developer'
   weight = 20
 
 [[menu.main]]
-  identifier = "about"
+  identifier = "about-me"
   name = "About Me"
-  url = "/about/"
+  url = "/about-me/"
   weight = 30

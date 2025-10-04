@@ -3,7 +3,7 @@ title: "RPGPlace"
 date: 2025-09-21T13:10:00Z
 draft: false
 weight: 1
-tags: ["Java", "Spring Boot", "Angular", "TypeScript", "PostgreSQL", "WebSockets", "Full-stack", "Game Development"]
+tags: ["Java", "Spring Boot", "Angular", "TypeScript", "PostgreSQL", "WebSockets", "Real-time", "Tailwind CSS", "Full-stack"]
 cover:
     image: "rpg-place-welcome.png"
     alt: "Screenshot of RPGPlace application"

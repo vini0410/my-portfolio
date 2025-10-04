@@ -5,7 +5,7 @@ draft: false
 weight: 3
 tags: ["Hugo", "Go", "Markdown", "Static Site", "PaperMod"]
 cover:
-    image: "https://via.placeholder.com/1280x720.png?text=Personal+Portfolio"
+    image: "portfolio-about-me.png"
     alt: "Screenshot of the portfolio website"
     caption: "A fast, responsive, and statically generated portfolio site."
 ---
