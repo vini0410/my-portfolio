@@ -1,0 +1,55 @@
+🚀 Sobre
+
+Desenvolvedor e Analista de Sistemas com 4+ anos de experiência no design e implementação de soluções escaláveis e seguras. Sou apaixonado por transformar tecnologia em impacto real, entregando sistemas que unem eficiência, inovação e valor para o negócio.
+
+💻 Principais stacks e tecnologias:
+
+Back-End: Java, Spring Boot, JPA, APIs REST
+
+Front-End: Angular, React, JavaScript, Node.js
+
+Linguagens adicionais: Python para automação e integrações
+
+Bancos de dados: SQL (Aurora RDS) e NoSQL (DynamoDB)
+
+Cloud: AWS (Lambda, S3, DynamoDB)
+
+🧩 Soft Skills: comunicação clara, trabalho em equipe, organização e foco em resultados.
+
+🎯 Objetivo: buscar desafios que permitam aplicar minhas habilidades técnicas e interpessoais na criação de soluções que gerem impacto positivo para empresas e usuários.
+
+💼 Experiência
+
+Desenvolvedor de Software Pleno (Java)
+TQI · Set 2025 – Atual · Remoto
+
+Desenvolvimento de sistemas e APIs escaláveis em Java/Spring Boot.
+
+Integração de serviços cloud e boas práticas de arquitetura hexagonal.
+
+Colaboração com equipes multidisciplinares para entrega ágil e de qualidade.
+
+Engenheiro de Software
+NTT DATA Brasil · Jan 2021 – Set 2025 · Remoto
+
+Atuação no desenvolvimento de soluções robustas em Java/Spring Boot.
+
+Criação de APIs e serviços em ambiente AWS (Aurora RDS, DynamoDB, Lambda, S3).
+
+Uso de Python e JavaScript para automações e integrações.
+
+Participação ativa no design, desenvolvimento e implementação de sistemas backend e integrações.
+
+Desenvolvedor de Software
+everis · Jan 2021 – Out 2021 · Florianópolis, SC
+
+Análise e desenvolvimento de sistemas corporativos.
+
+Experiência com programação orientada a objetos e suporte a integrações.
+
+Estagiário em Desenvolvimento de Software
+Betha Sistemas · Fev 2020 – Jan 2021 · Palhoça, SC
+
+Apoio no desenvolvimento de sistemas em POO.
+
+Participação em projetos de melhoria e suporte a equipes de desenvolvimento.
