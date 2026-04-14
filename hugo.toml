@@ -11,10 +11,16 @@ title = 'Vinicius Helegda - Software Developer'
   mainSections = ["projects"]
   disableSpecial1stPost = true
   defaultTheme = "dark"
+  disableThemeToggle = true # Desativa o botão na interface (comentado funcionalmente)
+
+  # Define o que aparece no cabeçalho (evita que o título longo quebre o layout)
+  [params.label]
+    text = "Vinicius Helegda"
+    displayLink = true
 
 [[menu.main]]
   identifier = "experiences"
-  name = "Professional Experiences"
+  name = "Experiences"
   url = "/experiences/"
   weight = 20
 

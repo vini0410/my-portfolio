@@ -1,0 +1,183 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{ .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}}
+      {{- partial "translation_list.html" . -}}
+      {{- partial "edit_post.html" . -}}
+      {{- partial "post_canonical.html" . -}}
+    </div>
+    {{- end }}
+  </header>
+  {{- $isHidden := site.Params.cover.hidden | default site.Params.cover.hiddenInSingle | default false }}
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  {{- if or .Params.github_url .Params.project_url }}
+  <div class="project-links">
+    {{- if .Params.project_url }}
+    <a href="{{ .Params.project_url }}" target="_blank" rel="noopener noreferrer" class="project-btn primary">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      Acessar Projeto
+    </a>
+    {{- end }}
+    {{- if .Params.github_url }}
+    <a href="{{ .Params.github_url }}" target="_blank" rel="noopener noreferrer" class="project-btn secondary">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+      GitHub
+    </a>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{- if .Params.gallery }}
+  <div class="project-gallery">
+    <h2 class="gallery-title">Galeria do Projeto</h2>
+    <div class="gallery-grid">
+      {{- range .Params.gallery }}
+      {{- $image := $.Resources.GetMatch . }}
+      {{- if $image }}
+      <a href="{{ $image.RelPermalink }}" class="glightbox" data-gallery="gallery1">
+        <img src="{{ $image.RelPermalink }}" alt="{{ $.Title }} gallery image" loading="lazy">
+      </a>
+      {{- end }}
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . }}
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{/* GLightbox Resources */}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script type="text/javascript">
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: true
+  });
+</script>
+
+<style>
+  .project-links {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+  }
+  .project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+  }
+  .project-btn.primary {
+    background-color: var(--secondary);
+    color: var(--theme);
+  }
+  .project-btn.primary:hover {
+    background-color: var(--tertiary);
+    transform: translateY(-2px);
+  }
+  .project-btn.secondary {
+    background-color: var(--code-bg);
+    color: var(--content);
+    border: 1px solid var(--border);
+  }
+  .project-btn.secondary:hover {
+    background-color: var(--border);
+    transform: translateY(-2px);
+  }
+  .project-btn svg {
+    flex-shrink: 0;
+  }
+
+  .project-gallery {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .gallery-title {
+    margin-bottom: 20px;
+  }
+  .gallery-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .gallery-grid::-webkit-scrollbar {
+    height: 8px;
+  }
+  .gallery-grid::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 10px;
+  }
+  .gallery-grid a {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    transition: transform 0.2s;
+  }
+  .gallery-grid a:hover {
+    transform: scale(1.02);
+  }
+  .gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+</style>
+
+{{- end }}

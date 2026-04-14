@@ -1,0 +1,40 @@
+/* Força o container principal a ser uma linha única sem quebras */
+.nav {
+    display: flex !important;
+    flex-flow: row nowrap !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+}
+
+.logo {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+    margin-right: var(--gap);
+}
+
+/* Remove estilos de lista e empurra o menu para a direita */
+#menu {
+    display: flex !important;
+    margin-inline-start: auto !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+#menu li {
+    margin-inline-start: var(--gap) !important;
+    padding: 0 !important;
+}
+
+/* Comentado por enquanto: 
+   Garante que o botão de troca de tema (logo-switches) não quebre a linha 
+.logo-switches {
+    display: flex !important;
+    align-items: center !important;
+    margin-inline-start: var(--gap) !important;
+    flex-shrink: 0 !important;
+}
+*/

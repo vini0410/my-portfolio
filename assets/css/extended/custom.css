@@ -3,9 +3,11 @@
     align-items: center;
 }
 
+/* Comentado por enquanto:
 .header-right #theme-toggle {
     margin-left: var(--gap);
 }
+*/
 
 .footer-contact {
     text-align: center;
