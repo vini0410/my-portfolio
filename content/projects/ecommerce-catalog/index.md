@@ -9,7 +9,12 @@ cover:
     alt: "Screenshot of Ecommerce Catalog application"
     caption: "A modern e-commerce catalog with admin features."
 gallery:
-    - "ecommerce-stacks.png"
+    - "eccomerce_home.png"
+    - "eccomerce_products.png"
+    - "eccomerce_admin_products.png"
+    - "eccomerce_admin_stacks.png"
+    - "eccomerce_admin_tags.png"
+    - "eccomerce_product_detail.png"
 project_url: "https://elegancia-cintilante.onrender.com"
 github_url: "https://github.com/vini0410/EcommerceCatalog"
 ---
