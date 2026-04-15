@@ -2,7 +2,7 @@
 title: "Ecommerce Catalog"
 date: 2025-09-21T13:00:00Z
 draft: false
-weight: 2
+weight: 1
 tags: ["React", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "Tailwind CSS", "Full-stack"]
 cover:
     image: "ecommerce-stacks.png"
