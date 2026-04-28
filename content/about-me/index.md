@@ -7,7 +7,7 @@ slug: about-me
 
 Hi, I'm Vinicius
 
-I'm a software developer with 4+ years of experience building robust and scalable solutions for companies in different industries. My main expertise is in the **Java ecosystem**, using **Spring Boot and JPA** to develop reliable APIs, as well as integrating cloud services with **AWS** to ensure scalability and security.
+I'm a software developer with 5+ years of experience building robust and scalable solutions for companies in different industries. My main expertise is in the **Java ecosystem**, using **Spring Boot and JPA** to develop reliable APIs, as well as integrating cloud services with **AWS** to ensure scalability and security.
 
 But my work goes beyond technical skills. I believe technology only makes sense when it solves real problems and creates a positive impact. That’s why I value **team collaboration**, **clear communication**, and **well-organized project management**.
 
